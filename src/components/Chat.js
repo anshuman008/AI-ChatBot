@@ -25,7 +25,7 @@ const Chat = () => {
         url: 'https://chatgpt-gpt4-ai-chatbot.p.rapidapi.com/ask',
         headers: {
           'content-type': 'application/json',
-          'X-RapidAPI-Key': 'YOUR-API-KEY',
+          'X-RapidAPI-Key': 'c54efde8eamsh5048cee7e468a4ap1e6043jsnab7fc7d5db96',
           'X-RapidAPI-Host': 'chatgpt-gpt4-ai-chatbot.p.rapidapi.com'
         },
         data: {
@@ -60,6 +60,10 @@ const Chat = () => {
             console.error(error);
         }
     };
+
+    function setDefaultValue(data){
+      setInputText(data)
+    }
     return (
         <div class="flex">
             
@@ -67,7 +71,7 @@ const Chat = () => {
                 <div className='m-5 flex flex-row gap-1'>
                     <RiChatVoiceFill className='h-10 text-4xl' />
                     <h2 className='text-3xl'>ChatGPT-4.AI</h2>
-                    <a href="https://github.com/dipayansarkar47/ai-chatbot" className='ml-auto text-3xl flex justify-end items-center' target='_blank' rel='noreferrer'>
+                    <a href="https://github.com/anshuman008/AI-ChatBot" className='ml-auto text-3xl flex justify-end items-center' target='_blank' rel='noreferrer'>
 
                         <FaGithubSquare />
                     </a>
@@ -75,15 +79,15 @@ const Chat = () => {
                 <div className='flex flex-col justify-center mx-5'>
                     <button type="button" className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'> + New Conversation</button>
                     <br />
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>How to make Projects?</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>Suggetions about content</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>Who is Codewithbiki?</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>Summarize this paragraph</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>Earthquake in Japan</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800'>What is hooks in ReactJS?</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('How to make Projects?')}}>How to make Projects?</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Suggetions about content')}}>Suggetions about content</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Who is Anshuman?')}}>Who is Anshuman?</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Summarize this paragraph')}}>Summarize this paragraph</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Earthquake in Japan')}}>arthquake in Japan</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('hat is hooks in ReactJS?')}}>What is hooks in ReactJS?</button>
                 </div>
             </div>
-            <div class="w-full bg-transparent h-screen flex flex-col justify-start items-start">
+            <div class="w-full  h-screen flex flex-col justify-start items-start">
                 <Navbar className=''></Navbar>
                 <div className='flex flex-col lg:pt-16 mb-16  gap-1 w-full'>
                     <div className="chats m-5 bg-blue-950 border-2 border-blue-700 rounded-sm">
