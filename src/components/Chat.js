@@ -25,7 +25,7 @@ const Chat = () => {
         url: 'https://chatgpt-gpt4-ai-chatbot.p.rapidapi.com/ask',
         headers: {
           'content-type': 'application/json',
-          'X-RapidAPI-Key': 'c54efde8eamsh5048cee7e468a4ap1e6043jsnab7fc7d5db96',
+          'X-RapidAPI-Key': '80577e9967msh02a0129e188383dp198168jsn23b05d7f3068',
           'X-RapidAPI-Host': 'chatgpt-gpt4-ai-chatbot.p.rapidapi.com'
         },
         data: {
@@ -81,10 +81,19 @@ const Chat = () => {
                     <br />
                     <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('How to make Projects?')}}>How to make Projects?</button>
                     <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Suggetions about content')}}>Suggetions about content</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Who is Anshuman?')}}>Who is Anshuman?</button>
-                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Summarize this paragraph')}}>Summarize this paragraph</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('What is love?')}}>What is love?</button>
+                    <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Summarize the Rich Dad Poor Dad Book.?')}}>Summarize the Rich Dad Poor Dad Book.?</button>
                     <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('Earthquake in Japan')}}>arthquake in Japan</button>
                     <button type="button" className='text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800' onClick={()=>{setDefaultValue('hat is hooks in ReactJS?')}}>What is hooks in ReactJS?</button>
+
+                    <div className='flex flex-col mt-20 text-xl justify-center items-center'>
+                        <div>
+                        Made by: <span className='text-green-500 hover:text-red-300 text-xl'>Anshuman</span> 
+                        </div>
+                    <a href='https://github.com/anshuman008' target='_blank'>
+                    <img className='w-10 mt-5' src='https://cdn-icons-png.flaticon.com/512/25/25231.png'/>
+                    </a>
+                     </div>
                 </div>
             </div>
             <div class="w-full  h-screen flex flex-col justify-start items-start">
